@@ -9,6 +9,10 @@ public class MainActivity extends AppCompatActivity {
 
     public void changeActivity(View view) {
         Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
+
+        // pass in some variables from the first Activity
+        intent.putExtra("hello","world");
+
         startActivity(intent);
     }
 
